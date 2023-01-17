@@ -41,6 +41,7 @@ body, html {
 
 #home {
     background-image: url("./images/layered-waves-haikei.svg");
+    background-position: cover;
 }
 
 .article {
