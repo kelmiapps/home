@@ -53,10 +53,32 @@ body, html {
 }
 
 .gallery {
+  height: auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
+}
+
+.imageHalf {
+  width: 50%;
+  margin: auto;
+  padding: 3%;
+  opacity: 1; /* initial opacity */
+  transition: opacity 0.5s; /* transition for smooth opacity change */ 
+}
+
+.imageFull {
+  width: 100%;
+  float: left;
+  margin: auto;
+  padding: 3%;
+  opacity: 1; 
+  transition: opacity 0.5s; 
+}
+.imageFull:hover, .imageHalf:hover {
+  cursor: pointer;
+  opacity: 0.5; /*Here set hover opacity*/
 }
 
 .bcPic {
