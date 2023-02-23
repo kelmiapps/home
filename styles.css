@@ -124,5 +124,8 @@ body, html {
   .bcPic {
     width: 50%;
   }
-
+  .greyCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
