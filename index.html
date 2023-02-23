@@ -57,7 +57,7 @@
   <div class="w3-display-left w3-text-white" id="bg" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">Turn your life into a video game</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Turn your life into a video game</span><br>
-    <span class="w3-large">BecomeChad is a new self improvement app coming soon in App Store and Google Play</span>
+    <span class="w3-large">BecomeChad is a new self improvement app available in App Store and Google Play</span>
     <p><a href="#work" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
   </div>
   <!--<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
@@ -199,17 +199,39 @@
       You choose what you want to improve and your virtual coach gives you quests ranging from fitness exercises to habit, mind, and social improvement tasks.
     </p>
     <p>
-      The app has a ton of features including progressive and scalable workout plan, improvement tracking and a virtual coach.
+      The app has a ton of features including progressive and scalable workout plan, improvement tracking and a virtual AI coach.
     </p>
-    <div class="gallery">
-      <a href="https://play.google.com/store/apps/details?id=com.kelmiapps.BecomeChadPro" target="_blank"><img src="./images/play_store.png" class="imageHalf" alt="Play Store link"></a>
-      <a href="https://apps.apple.com/fi/app/becomechad-pro/id1670871109?l=fi" target="_blank"><img src="./images/app_store.png" class="imageHalf" alt="App Store link"></a>
+    <p class="w3-center w3-large">Versions</p>
+    <div class="greyCard">
+      <div class="cardContainer">
+        <p class="w3-center cardTitle">BecomeChad</p>
+        <p class="cardText">Full access to training program, quests and skill tracking. Currently has a limit on how many questions you can ask Chad. &nbsp;</p>
+        <p class="cardText">Android Price: 1.99 €</p>
+        <p class="cardText">iOS Price: 2.49 €</p>
+        <div class="gallery">
+          <a href="https://play.google.com/store/apps/details?id=com.kelmiapps.BecomeChad" target="_blank"><img src="./images/play_store.png" class="imageHalf" alt="Play Store link"></a>
+          <a href="https://apps.apple.com/fi/app/becomechad/id1671719186?l=fi" target="_blank"><img src="./images/app_store.png" class="imageHalf" alt="App Store link"></a>
+        </div>
+      </div>
     </div>
+    <div class="greyCard">
+      <div class="cardContainer">
+        <p class="w3-center cardTitle">BecomeChad Pro</p>
+        <p class="cardText">Premium version of the application. Full access to all content as well as AI content. Future quality and content updates.</p>
+        <p class="cardText">Android Price: 9.99 €</p>
+        <p class="cardText">iOS Price: 12.99 €</p>
+        <div class="gallery">
+          <a href="https://play.google.com/store/apps/details?id=com.kelmiapps.BecomeChadPro" target="_blank"><img src="./images/play_store.png" class="imageHalf" alt="Play Store link"></a>
+          <a href="https://apps.apple.com/fi/app/becomechad-pro/id1670871109?l=fi" target="_blank"><img src="./images/app_store.png" class="imageHalf" alt="App Store link"></a>
+        </div>
+      </div>
+    </div>
+
     <div class="gallery">
-      <img src="./images/1.png" class="bcPic" onclick="onClick(this)" class="w3-hover-opacity" alt="BecomeChad ad 1">
-      <img src="./images/2.png" class="bcPic" onclick="onClick(this)" class="w3-hover-opacity" alt="BecomeChad ad 2">
-      <img src="./images/3.png" class="bcPic" onclick="onClick(this)" class="w3-hover-opacity" alt="BecomeChad ad 3">
-      <img src="./images/4.png" class="bcPic" onclick="onClick(this)" class="w3-hover-opacity" alt="BecomeChad ad 4">
+      <img src="./images/1.png" class="bcPic" onclick="fullscreen(this)" class="w3-hover-opacity" alt="BecomeChad ad 1">
+      <img src="./images/2.png" class="bcPic" onclick="fullscreen(this)" class="w3-hover-opacity" alt="BecomeChad ad 2">
+      <img src="./images/3.png" class="bcPic" onclick="fullscreen(this)" class="w3-hover-opacity" alt="BecomeChad ad 3">
+      <img src="./images/4.png" class="bcPic" onclick="fullscreen(this)" class="w3-hover-opacity" alt="BecomeChad ad 4">
     </div>
   </div>
 </div>
@@ -347,7 +369,7 @@
 <script>
   // Modal Image Gallery
   
-  function onClick(element) {
+  function fullscreen(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
     var captionText = document.getElementById("caption");

@@ -52,8 +52,31 @@ body, html {
   margin-bottom: 20px;
 }
 
+.greyCard {
+  float: left;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.cardContainer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: grey 0px 7px 29px 0px;
+}
+
+.cardTitle {
+  padding-top: 20px;
+}
+
+.cardText {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .gallery {
-  height: auto;
+  display: flex;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -61,10 +84,8 @@ body, html {
 }
 
 .imageHalf {
-  width: 50%;
-  float: left;
-  margin: auto;
-  padding: 3%;
+  width: 100%;
+  padding: 8%;
   opacity: 1; /* initial opacity */
   transition: opacity 0.5s; /* transition for smooth opacity change */ 
 }
