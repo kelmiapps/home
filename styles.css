@@ -103,6 +103,10 @@ body, html {
   opacity: 0.5; /*Here set hover opacity*/
 }
 
+.bcGallery {
+  width: 100%;
+}
+
 .bcPic {
   box-sizing: border-box;
   width: 25%;
