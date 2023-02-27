@@ -48,7 +48,6 @@ body, html {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -121,6 +120,42 @@ body, html {
 .bcPic:hover {
   cursor: pointer;
   opacity: 0.5; /*Here set hover opacity*/
+}
+
+/*slideshow*/
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.slideshow-container .bcGallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow-container .bcGallery.active {
+  opacity: 1;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  padding: 16px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
 }
 
 /*Mobile*/
