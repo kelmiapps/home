@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kelmi | About us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="8RSDFZZDOEe2fyfYpq4fkwpB7xDhkJ-j3XJJpMpWgYQ" />
+<link rel="icon" href="./images/kelmi_icon.svg"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./styles.css">
+<script src="./script.js"></script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">
+      <p id="logoText">Kelmi Apps </p>
+       <!--Kelmi logo-->
+
+      <div id="logoContainer">
+        <img id="logo" src="./images/kelmi_icon_bw.svg">
+      </div>
+   </a>
+
+   
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="https://kelmiapps.github.io/home/#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="https://kelmiapps.github.io/home/#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> OUR APPS</a>
+      <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> </a>-->
+      <a href="https://kelmiapps.github.io/home/#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="openSidebar()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeSidebar()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+  <a href="https://kelmiapps.github.io/home/#about" onclick="closeSidebar()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="https://kelmiapps.github.io/home/#work" onclick="closeSidebar()" class="w3-bar-item w3-button">OUR APPS</a>
+  <a href="https://kelmiapps.github.io/home/#contact" onclick="closeSidebar()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" style="padding:40px 16px; margin-top: 40px;" id="work">
+  <h3 class="w3-center">OUR STORY</h3>
+  <div class="article">
+    <p>The story of Kelmi Apps started during the Christmas holidays of 2022 in a dinner table conversation with my parents. We were discussing the much talked about crisis of young men these days, and possible solutions to it. I wondered what I could do about it and realised the best way to reach my target audience was to code an app.
+        The very next day I started brainstorming an app, which I eventually named BecomeChad.
+    </p>
+    <p>
+      I got a couple of friends to join in on the business, and after BecomeChad we realised we could do more apps that seek to better the lives of people. The next big project was AIcook, which transforms ingredients into full recipes with amounts and instructions.
+    </p>
+    <p>
+        Whats next for Kelmi Apps is to continue to improve our existing apps and create more innovative ideas in the future. So stay tuned for new content to come!
+    </p>
+    <p style="text-align: left;"> - Antti Joutsenniemi, CEO</p>
+   <p><a href="/index.html">Back to homepage</a></p>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px; margin-top: 40px;" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <!--<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>-->
+    <!--<p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>-->
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: kelmiapps@gmail.com</p>
+    <br>
+    <!--
+    <form action="mailto:kelmiapps@gmail.com" method="post" enctype="multipart/form-data">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="about.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+  <p>&copy; Kelmi Apps &nbsp; | &nbsp; Site powered by w3-framework, check source for template</p>
+</footer>
+
+</body>
+<script>
+  
+  // Modal for fullscreen images onclick
+  function fullscreen(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  //Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function openSidebar() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function closeSidebar() {
+      mySidebar.style.display = "none";
+  }
+
+  //slideshow
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slideshow-container .bcGallery');
+
+  function showSlides() {
+    slides[slideIndex].classList.add('active');
+  }
+
+  function switchSlides(n) {
+    slides[slideIndex].classList.remove('active');
+    slideIndex = slideIndex + n;
+    if(slideIndex >= slides.length){
+      slideIndex = 0;
+    }
+    if(slideIndex < 0){
+      slideIndex = slides.length - 1;
+    }
+    slides[slideIndex].classList.add('active');
+  }
+
+  showSlides();
+  
+</script>
+</html>

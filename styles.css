@@ -51,6 +51,15 @@ body, html {
   margin-bottom: 20px;
 }
 
+.articleTitle {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.cardWrapper {
+  width: 100%;
+}
+
 .greyCard {
   float: left;
   width: 50%;
@@ -58,6 +67,7 @@ body, html {
 }
 
 .cardContainer {
+  min-height: 250px;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
