@@ -150,6 +150,7 @@ body, html {
 .slideshow-container .bcGallery.active {
   opacity: 1;
 }
+
 .prev, .next {
   position: absolute;
   top: 50%;

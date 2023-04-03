@@ -94,7 +94,7 @@
       <p class="w3-large">Support</p>
       <p>Ask for support 24/7 across all our platforms at: kelmiapps@gmail.com</p>
     </div>
-    <p><a href="about.html">Read more about us >>></a></p>
+    <p class="w3-center"><a href="about.html">Read more about us >>></a></p>
   </div>
 </div>
 
@@ -227,8 +227,8 @@
     <div class="article">
   
       <!--Desktop gallery Aicook-->
-      <div class="slideshow-container" id="aicookDesktop">
-        <div class="bcGallery">
+      <div class="slideshow-container2" id="aicookDesktop">
+        <div class="bcGallery2">
           <img src="./images/aicook1.png" class="bcPic" onclick="fullscreen(this)" class="w3-hover-opacity" alt="Turn your life into a video game!">
           <img src="./images/aicook2.png" class="bcPic" onclick="fullscreen(this)" class="w3-hover-opacity" alt="Complete quests from 4 different categories">
           <img src="./images/aicook3.png" class="bcPic" onclick="fullscreen(this)" class="w3-hover-opacity" alt="Built in workout plan!">
@@ -482,6 +482,28 @@
   }
 
   showSlides();
+
+    //slideshow for aicook
+    let slideIndex2 = 0;
+  const slides2 = document.querySelectorAll('.slideshow-container2 .bcGallery2');
+
+  function showSlides2() {
+    slides2[slideIndex2].classList.add('active');
+  }
+
+  function switchSlides2(n) {
+    slides2[slideIndex2].classList.remove('active');
+    slideIndex2 = slideIndex2 + n;
+    if(slideIndex2 >= slides2.length){
+      slideIndex2 = 0;
+    }
+    if(slideIndex2 < 0){
+      slideIndex2 = slides2.length - 1;
+    }
+    slides2[slideIndex2].classList.add('active');
+  }
+
+  showSlides2();
   
 </script>
 </html>
